@@ -1,0 +1,86 @@
+.container{
+  width: 100%; height: 50px;
+  max-width: 1366px;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  position: fixed;
+  top: 0; left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.containerLogo{
+  width: 50px; height: 50px;
+  fill: white;
+  cursor: pointer;
+}
+.containerHamburgerNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+}
+.containerHamburgerNav:hover{
+  background: rgba(255, 255, 255, .1);
+}
+.containerNav{
+  display: none;
+  list-style: none;
+}
+.containerNavIsActive{
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%; height: 400px;
+  text-align: center;
+  top: 0; left: 0;
+  margin-top: 50px;
+  gap: 20px;
+  z-index: 10;
+  background: rgba(0, 0, 0, .9);
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.containerLink , .containerLinkPrimary{
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  font-size: 22px;
+  transition: .1s ease-in-out;
+}
+.containerLink:hover{
+  background: rgba(255, 255, 255, 0.1);
+  transition: .1s ease-in-out;
+}
+.containerLinkPrimary{
+  padding: 3px 30px;
+  background: white;
+  color: black;
+  border-radius: 20px;
+}
+.containerLinkPrimary:hover{
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+@media(min-width:768px){
+  .container{
+    width: 90%;
+    inset: auto;
+  }
+  .containerHamburgerNav{
+    display: none;
+  }
+  .containerNav{
+    display: flex;
+  }
+  .containerLink , .containerLinkPrimary{
+    font-size: 16px;
+  }
+}

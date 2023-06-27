@@ -1,15 +1,56 @@
 ---
+import Layout from '../components/Layout.astro'
+import AboutMe from '../components/AboutMe'
+import style from './Index.module.css'
+import styleBtn from '../components/Buttons/Buttons.module.css'
+import SectionOne from '../components/SectionOne'
+import SectionTwo from '../components/SectionTwo'
+import SectionThree from '../components/SectionThree'
+import { LogoLinkedin, DownloadSvg, LogoGitHub, LogoInstagram, LogoBehance } from '../components/Icons'
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<section id="inicio" class={style.containerSection}>
+		<h2 class={style.title}>Desarrollador/Diseñador frontend</h2>
+		<h1 class={style.name}>Carlos Andrés Segura</h1>
+		<h2 class={style.slogan}>{'{Aprende, crea, diviértete e itera...}'}</h2>
+		<div class={style.containerSocial}>
+			<a aria-label="Enlace de linkedin" target="_blank" href="https://www.linkedin.com/in/casvaru/"><LogoLinkedin/></a>
+			<a aria-label="Enlace de Github" target="_blank" href="https://github.com/Casvaru/"><LogoGitHub/></a>
+			<a aria-label="Enlace de Instagram" target="_blank" href="https://www.instagram.com/casvaru/"><LogoInstagram/></a>
+			<a aria-label="Enlace de Behance" target="_blank" href="https://www.behance.net/casvaru"><LogoBehance/></a>
+		</div>
+		<div class={style.containerBtn}>
+			<a download="" class={styleBtn.btnMain} href="./public/carlossegura-cv.pdf">Descargar HV <span class={style.logoLink}><DownloadSvg/></span> </a>
+		</div>
+	</section>
+	<AboutMe />
+	<section id="proyectos" class={style.containerSectionGeneral}>
+		<h2 class={style.sectionTitle}><span class={style.Bracket}>&#123;</span>Proyectos<span class={style.Bracket}>&#125;</span></h2>
+		<SectionOne/>
+		<SectionTwo/>
+		<SectionThree/>
+	</section>
+	<section id="experiencia" class={style.containerSectionGeneral}>
+		<h2 class={style.sectionTitle}><span class={style.Bracket}>&#123;</span>Experiencia<span class={style.Bracket}>&#125;</span></h2>
+		<div class={style.containerTimeLine}>
+			<div class={style.containerExperience}>
+				<div class={style.sectionExperience}>
+					<h3 class={style.titleExperience}>2023 | Jer.SA (actualidad)</h3>
+					<p>En JER S.A, soy un activo colaborador en la atención al cliente y desarrollador. Aplicando mis habilidades en programación y diseño para crear herramientas internas como externas la resolución de dudas y problemas de los usuarios de manera eficiente desde el punto de vista digital. Desarrollador de chat bot para WhatsApp y una aplicación de contabilidad que optimizó los procesos internos de la empresa. Contribuí a mejorar la experiencia de los clientes con mis habilidades y a fortalecer la marca de JER S.A. y su portafolio de productos.</p>
+				</div>
+			</div>
+			<div class={style.containerExperience}>
+				<div class={style.sectionExperience}>
+					<h3 class={style.titleExperience}>2023 | Freelance</h3>
+					<p>Diseñador y desarrollador de proyectos bajo demanda de clientes o por proyectos propios que solucione un problema en específico a una comunidad, donde pueda dar valor y aplicar mis conocimientos aprendidos en el diseño y desarrollo de apps mobile y landingpages.</p>
+				</div>
+			</div>
+			<div class={style.containerExperience}>
+				<div class={style.sectionExperience}>
+					<h3 class={style.titleExperience}>2022 | BureauVeritas</h3>
+					<p>Mi rol de Bureau Veritas, desempeñé varias funciones críticas en la creación de contenido visual para la marca. Como diseñador gráfico, produje piezas de alta calidad que ayudaron a transmitir la visión y los valores de la empresa. También produje videos corporativos innovadores que capturaron la atención de la audiencia y reforzaron las aplicaciones de marca.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>

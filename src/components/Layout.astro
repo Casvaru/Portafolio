@@ -1,0 +1,38 @@
+---
+import style from "./Layout.module.css"
+import Header from "./Header/Header"
+import Footer from "./Footer"
+---
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Casvaru | Portafolio</title>
+    <meta
+      name="description"
+      content="Soy diseñador gráfico multimedial egresado de la Unigermana, enfocado en la creación de piezas gráficas y desarrollo web con un estilo minimalista para productos y/o servicios digitales."
+    />
+    <meta
+      name="keywords"
+      content="casvaru , desarrollador web , diseño grafico , diseñador grafico, mockup , diseño de mockup , modelado 3d , figma , colombia , bogotá , developer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../public/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class={style.container}>
+    <Header client:load />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

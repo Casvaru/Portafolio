@@ -1,0 +1,202 @@
+.containerSection{
+  width: 100%; height: 100vh;
+  max-height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.title{
+  font-size: 16px;
+  font-weight: 500;
+}
+.name{
+  font-size: 30px;
+  font-weight: bold;
+  background-image: linear-gradient(135deg, #FFE500, #AD00FF, #0075FF);
+  animation: gradient-animation 4s infinite ease-in;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+@keyframes gradient-animation{
+  0% {
+    background-image: linear-gradient(135deg, #FFE500, #AD00FF, #0075FF);
+  }
+  5% {
+    background-image: linear-gradient(135deg, #FFDC3A, #9C0CFF, #1A80E6);
+  }
+  10% {
+    background-image: linear-gradient(135deg, #FFC973, #8A17FF, #338BCC);
+  }
+  15% {
+    background-image: linear-gradient(135deg, #FFB0AD, #7923FF, #4D97B3);
+  }
+  20% {
+    background-image: linear-gradient(135deg, #FF99E6, #682FFF, #66A299);
+  }
+  25% {
+    background-image: linear-gradient(135deg, #FF81FF, #573BFF, #80AD80);
+  }
+  30% {
+    background-image: linear-gradient(135deg, #FF69FF, #4546FF, #99B866);
+  }
+  35% {
+    background-image: linear-gradient(135deg, #FF50FF, #3452FF, #B3C34C);
+  }
+  40% {
+    background-image: linear-gradient(135deg, #FF38FF, #235EFF, #CCCF33);
+  }
+  45% {
+    background-image: linear-gradient(135deg, #FF1FFF, #1169FF, #E6DA1A);
+  }
+  50% {
+    background-image: linear-gradient(135deg, #FF06FF, #0075FF, #FFE500);
+  }
+  55% {
+    background-image: linear-gradient(135deg, #FF06FF, #1169FF, #E6DA1A);
+  }
+  60% {
+    background-image: linear-gradient(135deg, #FF1FFF, #235EFF, #CCCF33);
+  }
+  65% {
+    background-image: linear-gradient(135deg, #FF38FF, #3452FF, #B3C34C);
+  }
+  70% {
+    background-image: linear-gradient(135deg, #FF50FF, #4546FF, #99B866);
+  }
+  75% {
+    background-image: linear-gradient(135deg, #FF69FF, #573BFF, #80AD80);
+  }
+  80% {
+    background-image: linear-gradient(135deg, #FF81FF, #682FFF, #66A299);
+  }
+  85% {
+    background-image: linear-gradient(135deg, #FF99E6, #7923FF, #4D97B3);
+  }
+  90% {
+    background-image: linear-gradient(135deg, #FFB0AD, #8A17FF, #338BCC);
+  }
+  95% {
+    background-image: linear-gradient(135deg, #FFC973, #9C0CFF, #1A80E6);
+  }
+  100% {
+    background-image: linear-gradient(135deg, #FFDC3A, #AD00FF, #0075FF);
+  }
+}
+.slogan{
+  font-weight: 200;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+.containerSocial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  /* background: red; */
+}
+.containerSocial svg{
+  height: 22px !important;
+  opacity: .6;
+  transition: .2s ease-in-out;
+}
+.containerSocial a:hover svg{
+  opacity: 1;
+  transition: .1s ease-in-out;
+}
+.javascript{
+  color: #FFCA28;
+}
+.containerBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: black !important;
+  flex-direction: row !important;
+}
+.logoLink{
+  width: 50px; height: 100px;
+  align-items: center;
+  flex-direction: row;
+}
+.logoLink svg{
+  padding: 0px;
+  width: 20px; height: 20px;
+}
+.containerAbout{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 20px 0px;
+  flex-direction: column;
+  text-align: center;
+}
+.containerSectionGeneral{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.containerRoadMap{
+  padding: 20px;
+}
+.btnPrimary{
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.sectionTitle{
+  display: flex;
+  align-items: center;
+  height: 200px;
+  font-size: 28px;
+}
+.Bracket{
+  color: #F37A53;
+}
+.containerTimeLine{
+  border-left: 1px solid rgba(255, 255, 255, 0.466);
+  height: auto; width: 80%;
+  position: relative;
+}
+.containerExperience{
+  position: relative;
+}
+.sectionExperience::before{
+  content: "";
+  width: 15px; height: 15px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: -28px;
+  margin-top: 7px;
+}
+.sectionExperience{
+  padding: 0px 20px;
+  margin-bottom: 100px;
+}
+.containerFooter{
+  height: 300px; width: 100%;
+}
+@media(min-width:1024px){
+  .title{
+  font-size: 20px;
+  }
+  .name{
+  font-size: 50px;
+  }
+  .containerAbout{
+    font-size: 18px;
+  }
+}

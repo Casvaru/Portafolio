@@ -1,0 +1,91 @@
+.containerProjects{
+  width: 100%; height: 600px;
+  display: flex;
+  align-items: flex-end;
+  object-fit: fill;
+  position: relative;
+  justify-content: center;
+  background: #0000008a;
+  transition: .2s ease-in;
+  position: relative;
+  overflow: hidden;
+}
+.containerProjects:hover{
+  background: #0000005e;
+}
+.containerProjects::before{
+  border-radius: 15px;
+  content: "";
+  width: 100%; height: auto;
+  inset: 0;
+  z-index: -10;
+  position: absolute;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.containerDescriptionProject{
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+.titleProject{
+  font-size: 20px;
+}
+.descriptionProject{
+  font-size: 10px;
+  padding: 20px 0px;
+}
+.containerLogos{
+  display: flex;
+  width: 150px;
+  padding: 3px 10px;
+  gap: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+.containerLink{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0px;
+  align-items: center;
+}
+.containerIconLogo{
+  padding: 5px;
+  display: flex;
+  margin: 20px 0px;
+}
+.videoBg{
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  z-index: -10;
+}
+@media(min-width:1280px){
+  .containerProjects{
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .containerDescriptionProject{
+    padding: 0px 40px;
+    justify-content: center;
+    width: 35%; height: 100%;
+    text-align: left;
+  }
+  .descriptionProject{
+    font-size: 13px;
+  }
+  .containerLink{
+    justify-content: flex-start;
+  }
+  .videoBg{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: -10;
+  }
+}
