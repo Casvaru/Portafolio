@@ -26,7 +26,7 @@ export default function SectionOne () {
         </div>
       </div>
       <div className={style.containerImagePhone}>
-        <img src="./public/moneybeam.png" alt="" />
+        <img src="./moneybeam.png" alt="" />
       </div>
     </div>
   </>

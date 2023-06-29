@@ -25,7 +25,7 @@ export default function SectionOne () {
         </div>
       </div>
         <video className={style.videoBg} autoPlay loop muted>
-          <source src='./public/bvforms.mp4' />
+          <source src='./bvforms.mp4' />
         </video>
     </div>
   </>
