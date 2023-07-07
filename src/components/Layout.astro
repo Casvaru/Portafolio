@@ -16,6 +16,7 @@ import Footer from "./Footer"
       content="casvaru , desarrollador web , diseño grafico , diseñador grafico, mockup , diseño de mockup , modelado 3d , figma , colombia , bogotá , developer"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="view-transition" content="same-origin" />
     <link
       rel="shortcut icon"
       href="./favicon.svg"
@@ -30,7 +31,7 @@ import Footer from "./Footer"
   </head>
   <body class={style.container}>
     <Header client:load />
-    <main>
+    <main id="content">
       <slot />
     </main>
     <Footer />

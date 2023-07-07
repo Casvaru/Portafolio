@@ -1,5 +1,5 @@
 import style from './Header.module.css'
-import { Logo, HamburgerMenu, HamburgerMenuClose } from '../Icons'
+import { Logo, HamburgerMenu, HamburgerMenuClose, LogoLink } from '../Icons'
 import { useState } from 'react'
 
 export default function Header () {
@@ -11,7 +11,7 @@ export default function Header () {
   return (
     <header className={style.container}>
       <div className={style.containerLogo}>
-        <Logo/>
+        <a href="https://www.casvaru.com"><Logo/></a>
       </div>
       <div>
       </div>

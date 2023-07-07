@@ -6,6 +6,12 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  animation: gradientBackground 1s infinite linear;
+  background: -webkit-linear-gradient(top, transparent 30px, #e9ebed27 31px), 
+      -webkit-linear-gradient(left, transparent 30px, #e9ebed27 31px);
+  background-size: 31px 31px;
+  box-shadow: inset 0px 0px 200px 70px black;
+  background-color: #ffffff09;
 }
 .title{
   font-size: 16px;
@@ -15,11 +21,20 @@
   font-size: 30px;
   font-weight: bold;
   background-image: linear-gradient(135deg, #FFE500, #AD00FF, #0075FF);
-  animation: gradient-animation 4s infinite ease-in;
+  animation: gradient-animation 4s infinite linear;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
+}
+@keyframes gradientBackground{
+  to{
+    background-position: 0px 0px;
+    
+  }
+  from{
+    background-position: 62px 62px;
+  }
 }
 @keyframes gradient-animation{
   0% {
@@ -129,9 +144,10 @@
   width: 20px; height: 20px;
 }
 .containerAbout{
-  height: 500px;
+  height: 500px; max-width: 75ch;
   width: 100%;
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
   font-size: 16px;

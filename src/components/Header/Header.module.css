@@ -50,15 +50,15 @@
 .containerLink , .containerLinkPrimary{
   color: white;
   text-decoration: none;
-  padding: 5px 20px;
-  margin: 5px 0px;
+  padding: 7px 20px;
+  margin: 7px 0px;
   border-radius: 5px;
   font-size: 22px;
   transition: .1s ease-in-out;
 }
 .containerLink:hover{
   background: rgba(255, 255, 255, 0.1);
-  transition: .1s ease-in-out;
+  transition: .3s ease-in-out;
 }
 .containerLinkPrimary{
   padding: 3px 30px;
