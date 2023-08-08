@@ -1,0 +1,80 @@
+---
+import style from '../components/Index.module.css'
+import styleBtn from '../components/Buttons/Buttons.module.css'
+import { LogoHtml,
+  LogoCss,
+  LogoJavaScript,
+  LogoAstro,
+  LogoReact,
+  LogoFigma,
+  LogoGit,
+  LogoTailwind,
+  LogoFirebase,
+  LogoCordova, 
+  LogoIllustrator,
+  LogoBlender,
+  LogoPhotoshop,
+  LogoPremiere } from '../components/Icons'
+---
+<section id="proyectos" class={style.containerSectionGeneral}>
+  <head>
+    <h2 class={style.sectionTitle}><span class={style.Bracket}>&#123;</span>Proyectos<span class={style.Bracket}>&#125;</span></h2>
+  </head>
+  <div class={style.containerCapsuleProject}>
+    <div class={style.capsuleProject}>
+      <a href="https://www.secosenlinea.com"><img src="public/secosenlinea.webp" alt="secos en línea imagen de referencia"></a>
+      <div class={style.infoProject}>
+        <h5>Secos en línea</h5>
+        <p>Plataforma web que tiene como objetivo la centralización y fácil consumo para la verificación de los últimos resultados y secos de las loterías de Colombia.</p>
+        <div class={style.containerTechnology}>
+          <LogoHtml/>
+          <LogoCss/>
+          <LogoJavaScript/>
+          <LogoAstro/>
+          <LogoReact/>
+          <LogoFigma/>
+          <LogoGit/>
+          <LogoTailwind/>
+          <LogoFirebase/>
+        </div>
+        <div class={style.containerLinks}>
+          <a target='_blank' rel='noreferrer' class={styleBtn.btnCommonS} href="https://www.secosenlinea.com">Ver web</a>
+          <a target='_blank' rel='noreferrer' class={styleBtn.linkCommonS} href="https://github.com/AsvarApp/SecosEnLinea">Respositorio</a>
+          <a target='_blank' rel='noreferrer' class={styleBtn.linkCommonS} href="https://www.figma.com/file/vkDrVLSq6Fs3xXs55Faukp/Secos-web?type=design&node-id=1%3A3&mode=design&t=9LLVo9ufvAtzmhLP-1">Figma</a>
+        </div>
+      </div>
+    </div>
+    <div class={style.capsuleProject}>
+      <a href="https://contadordinero.vercel.app/"><img src="public/moneybeam.webp" alt="Render aplicación Moneybeam en iPhone"></a>
+      <div class={style.infoProject}>
+        <h5>MoneyBeam</h5>
+        <p>Aplicación mobile enfocada en la productivad y finanzas, facilitando calcular grandes cantidades de dinero solo contando el valor de cada billete. (Valores en peso colombiano)</p>
+        <div class={style.containerTechnology}>
+          <LogoHtml/><LogoCss/><LogoJavaScript/><LogoGit/><LogoCordova/>
+        </div>
+        <div class={style.containerLinks}>
+          <a class={styleBtn.btnCommonS} href="https://drive.google.com/file/d/1YPr7v6r-7WmfLuOTAUJKt8tFsoilcDNZ/view?usp=sharing">Descargar APK</a>
+        <a target='_blank' rel='noreferrer' class={styleBtn.linkCommonS} href="https://contadordinero.vercel.app/">Ver web</a>
+        <a target='_blank' rel='noreferrer' class={styleBtn.linkCommonS} href="https://github.com/Casvaru/Moneybeam">Respositorio</a>
+        <a target='_blank' rel='noreferrer' class={styleBtn.linkCommonS} href="https://www.figma.com/file/ID0VLlGzLNY3HAXjk9RXOz/MoneyBeam?type=design&node-id=0%3A1&mode=design&t=s2AshOptzdLmVcdM-1">Figma</a>
+        </div>
+      </div>
+    </div>
+    <div class={style.capsuleProject}>
+      <a aria-label="Link al proyecto en Behance" href="https://www.behance.net/gallery/152597889/Bv-Forms-New-Design"><video autoplay muted loop src="public/bvforms.mp4"></a>
+      <div class={style.infoProject}>
+        <h5>BV Forms</h5>
+        <p>Diseño de piezas publicitarias para diversas aplicaciones, onboarding y carouseles de la Playstore aportando un diseño más moderno y minimalista pero conservando su identidad.</p>
+        <div class={style.containerTechnology}>
+          <LogoIllustrator/>
+          <LogoPhotoshop/>
+          <LogoPremiere/>
+          <LogoBlender/>
+        </div>
+        <div class={style.containerLinks}>
+          <a target='_blank' rel='noreferrer' class={styleBtn.btnCommonS} href="https://www.behance.net/gallery/152597889/Bv-Forms-New-Design">Behance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -8,14 +8,18 @@
   gap: 10px;
   animation: gradientBackground 1s infinite linear;
   background: -webkit-linear-gradient(top, transparent 30px, #e9ebed27 31px), 
-      -webkit-linear-gradient(left, transparent 30px, #e9ebed27 31px);
+              -webkit-linear-gradient(left, transparent 30px, #e9ebed27 31px);
   background-size: 31px 31px;
-  box-shadow: inset 0px 0px 200px 70px black;
+  box-shadow: inset 0px 0px 150px 50px black;
   background-color: #ffffff09;
+}
+.sectionCurriculum{
+  background-color: red;
 }
 .title{
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  display: flex;
 }
 .name{
   font-size: 30px;
@@ -26,6 +30,96 @@
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
+}
+.containerName{
+  height: 50px;
+  overflow: hidden;
+}
+.textName{
+  margin-top: auto;
+  opacity: 0;
+  animation: animationNameLoadingPage 1.5s .3s cubic-bezier(0, 1.05, 1, 1) both;
+}
+.titleDesigner{
+  position: relative;
+  width: 0ch;
+  display: inline-block;
+  overflow: hidden;
+  animation: intervalHiddenTitleDesigner 6s 3s infinite steps(9);
+  color: #FFE500;
+}
+.titleDeveloper{
+  animation: intervalHiddenTitleDeveloper 6s steps(13) infinite;
+  display: inline-block;
+  overflow: hidden;
+}
+.titleFrontend{
+  position: relative;
+  padding-left: 4px;
+}
+.titleFrontend::after{
+  position: absolute;
+  inset: 0;
+  content: "";
+  left: 0px;
+  border-left: 3px solid;
+  animation: pleca 1s infinite linear;
+}
+@keyframes animationNameLoadingPage{
+  0%{
+    margin-top: 100px;
+  }
+  50%{
+    margin-top: 0px;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes intervalHiddenTitleDeveloper{
+  0%{
+    width: 0ch;
+  }
+  15%{
+    width: 11ch;
+  }
+  30%{
+    width: 11ch;
+  }
+  50%{
+    width: 0ch;
+  }
+  100%{
+    width: 0ch;
+  }
+}
+@keyframes intervalHiddenTitleDesigner{
+  0%{
+    width: 0ch;
+  }
+  15%{
+    width: 8.3ch;
+  }
+  30%{
+    width: 8.3ch;
+  }
+  50%{
+    width: 0ch;
+  }
+  100%{
+    width: 0ch;
+  }
+}
+@keyframes pleca{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 @keyframes gradientBackground{
   to{
@@ -129,19 +223,16 @@
 }
 .containerBtn{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: black !important;
-  flex-direction: row !important;
 }
-.logoLink{
-  width: 50px; height: 100px;
-  align-items: center;
-  flex-direction: row;
+.containerBtn:hover .logoLink svg{
+  filter: invert(100);
+  transition: .2s ease-in-out;
 }
 .logoLink svg{
+  display: flex;
   padding: 0px;
   width: 20px; height: 20px;
+  transition: .2s ease-in-out;
 }
 .containerAbout{
   height: 500px; max-width: 75ch;
@@ -162,8 +253,44 @@
   align-items: center;
   flex-direction: column;
 }
-.containerRoadMap{
-  padding: 20px;
+.containerCapsuleProject{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.capsuleProject{
+  display: flex;
+  justify-content: center;
+  width: 300px; height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.capsuleProject img{
+  height: 100%; width: 100%;
+  object-fit: cover;
+}
+.capsuleProject video{
+  height: 100%;
+}
+.capsuleProject .infoProject{
+  display: none;
+}
+.containerSectionExperience{
+  width: 100%; max-width: 80ch;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.containerRoadMap , .containerTechnology{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.containerRoadMap div{
+  cursor: crosshair;
 }
 .btnPrimary{
   padding: 10px 40px;
@@ -209,10 +336,68 @@
   .title{
   font-size: 20px;
   }
+  .containerName{
+    height: 80px;
+  }
   .name{
   font-size: 50px;
   }
   .containerAbout{
     font-size: 18px;
+  }
+  .containerAbout p{
+    
+    padding: 20px 0px;
+  }
+  .containerCapsuleProject{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .containerCapsuleProject .capsuleProject{
+    width: 120px; height: 500px;
+    background: #fff;
+    border-radius: 99px;
+    transition: .5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100);
+  }
+  .containerCapsuleProject .infoProject{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0; left: 0;
+    background: #000000d8;
+    color: white;
+    margin-bottom: -800px;
+    display: block;
+    transition: .2s ease-in-out;
+  }
+  .infoProject h5{
+    font-size: 1rem;
+  }
+  .infoProject p{
+    font-size: .9rem;
+    padding: 2px 0px 7px 0px;
+  }
+  .containerCapsuleProject .containerLinks{
+    padding: 15px 0px;
+  }
+  .containerCapsuleProject .capsuleProject a img{
+    height: 500px; width: 100%;
+    object-fit: cover;
+  }
+  .containerCapsuleProject div:hover .infoProject{
+    margin-bottom: 0px;
+    transition: .5s .2s ease-in-out;
+  }
+  .containerCapsuleProject .capsuleProject:hover{
+    width: 800px;
+    transition: .5s ease-in-out;
+    border-radius: 40px;
+    filter: grayscale(0) contrast(1.2);
   }
 }

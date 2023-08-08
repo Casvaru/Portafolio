@@ -1,12 +1,12 @@
 ---
-import style from "./Layout.module.css"
+import style from "../styles/Layout.module.css"
 import Header from "./Header/Header"
 import Footer from "./Footer"
 ---
 <html lang="es">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <title>Casvaru | Portafolio</title>
+    <title>Carlos Segura</title>
     <meta
       name="description"
       content="Soy diseñador gráfico multimedial egresado de la Unigermana, enfocado en la creación de piezas gráficas y desarrollo web con un estilo minimalista para productos y/o servicios digitales."
@@ -28,12 +28,19 @@ import Footer from "./Footer"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
+    <meta name="view-transition" content="same-origin" />
+
+    <meta name="twitter:site" content="@casvaru">
+    <meta name="twitter:title" content="Carlos Segura">
+    <meta name="twitter:description" content="Desarrollador y diseñador web Colombiano, anímate a ver mi trabajo.">
+    <meta name="twitter:image" content="./public/twitterCard.png">
   </head>
-  <body class={style.container}>
+  <body id="body" class={style.container}>
     <Header client:load />
     <main id="content">
       <slot />
     </main>
     <Footer />
+    <div class="circle"></div>
   </body>
 </html>

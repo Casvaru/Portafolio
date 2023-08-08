@@ -11,18 +11,17 @@ export default function Header () {
   return (
     <header className={style.container}>
       <div className={style.containerLogo}>
-        <a href="https://www.casvaru.com"><Logo/></a>
+        <a aria-label='Logo' href="https://www.casvaru.com"><Logo/></a>
       </div>
       <div>
       </div>
       <div>
-        <div onClick={handleClickMenu} className={style.containerHamburgerNav}>{menuIsActive ? <HamburgerMenuClose/> : <HamburgerMenu/>}</div>
+        <div onClick={handleClickMenu} className={style.containerHamburgerNav} aria-haspopup="true">{menuIsActive ? <HamburgerMenuClose/> : <HamburgerMenu/>}</div>
         <nav>
           <ul className={menuIsActive ? style.containerNavIsActive : style.containerNav}>
-            <li><a className={style.containerLink} href="#inicio">Inicio</a></li>
-            <li><a className={style.containerLink} href="#sobremi">Sobre mi</a></li>
-            <li><a className={style.containerLink} href="#proyectos">Proyectos</a></li>
-            <li><a className={style.containerLink} href="#experiencia">Experiencia</a></li>
+            <li><a className={style.containerLink} href="/">Inicio</a></li>
+            <li><a className={style.containerLink} href="demos">Demos</a></li>
+            <li><a className={style.containerLink} href="curriculum">Curriculum</a></li>
             <li><a className={style.containerLink} target='_blank' rel='noreferrer' href="https://blog.casvaru.com">Blog</a></li>
           </ul>
         </nav>
