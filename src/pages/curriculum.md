@@ -1,6 +1,5 @@
 ---
   layout: ../components/Layout.astro
-  style: ../components/index.module.css
 ---
 <section class="container">
 <header>
