@@ -353,11 +353,11 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
   }
   .containerCapsuleProject .capsuleProject{
-    width: 120px; height: 500px;
+    max-width: 120px; height: 500px;
+    flex-grow: 1;
     background: #fff;
     border-radius: 99px;
     transition: .5s ease-in-out;
@@ -395,7 +395,7 @@
     transition: .5s .2s ease-in-out;
   }
   .containerCapsuleProject .capsuleProject:hover{
-    width: 800px;
+    max-width: 800px !important;
     transition: .5s ease-in-out;
     border-radius: 40px;
     filter: grayscale(0) contrast(1.2);
