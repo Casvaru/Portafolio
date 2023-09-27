@@ -22,7 +22,7 @@
 
   ### Experiencia
 
-  - JER S.A (Asesor comercial) 2020 - Actualidad
+  - JER S.A | 2020 - Actualidad
   - Garagoa - Boyacá
     - Lidero una web que gestiona y centraliza los datos e  información de las loterías con sus resultados y secos. Optimizando tiempos de búsqueda.
     - Impulsé la creación de un chatbot de whatsapp para el mejoramiento de la comunicación y respuestas al cliente con sus diferentes dudas e inquietudes.
