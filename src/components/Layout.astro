@@ -2,6 +2,12 @@
 import style from "../styles/Layout.module.css"
 import Header from "./Header/Header"
 import Footer from "./Footer"
+
+interface Props{
+  menuIsShow: boolean;
+  footerIsShow: boolean;
+}
+const { menuIsShow = true, footerIsShow = true } = Astro.props;
 ---
 <html lang="es">
   <head>
@@ -36,11 +42,11 @@ import Footer from "./Footer"
     <meta name="twitter:image" content="./public/twitterCard.png">
   </head>
   <body id="body" class={style.container}>
-    <Header client:load />
+    {menuIsShow ? <Header client:load /> : null }
     <main id="content">
       <slot />
     </main>
-    <Footer />
+    {footerIsShow ? <Footer /> : null }
     <div class="circle"></div>
   </body>
 </html>

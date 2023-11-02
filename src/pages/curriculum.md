@@ -43,13 +43,15 @@
 <div class='experience'>
 
   ### Educación
+  - Sena 2023
+    - Desarrollo web con Php | <a target="_blank" href="./senaDesarrolloWebConPhp.pdf">Certificado</a>
   - One Oracle Next Education 2023
-    - Principiante en Programación G5 - ONE | [Certificado](https://app.aluracursos.com/degree/certificate/77010deb-64c6-44b4-ae3c-d339cad763d6)
+    - Principiante en Programación G5 - ONE | <a target="_blank" href="https://app.aluracursos.com/degree/certificate/77010deb-64c6-44b4-ae3c-d339cad763d6">Certificado</a>
   - Platzi 2023
-    - Figma Avanzado | [Certificado](https://platzi.com/p/casvaru/curso/2582-figma-avanzado/diploma/detalle/)
-    - Básico Javascript  | [Certificado](https://platzi.com/p/casvaru/curso/1814-basico-javascript/diploma/detalle/)
+    - Figma Avanzado | <a target="_blank" href="https://platzi.com/p/casvaru/curso/2582-figma-avanzado/diploma/detalle/">Certificado</a>
+    - Básico Javascript  | <a target="_blank" href="https://platzi.com/p/casvaru/curso/1814-basico-javascript/diploma/detalle/">Certificado</a>
   - Unigermana 2019-2022
-    - Tecnólogo en Diseño gráfico multimedial | [Certificado](https://drive.google.com/file/d/1WY59U-VCAIUO3_cLtGNmu444gJU3OQSz/view?usp=sharing)
+    - Tecnólogo en Diseño gráfico multimedial | <a target="_blank" href="./unigermanaDisenoGrafico.jpg">Certificado</a>
   
 </div>
 <div class='experience'>
@@ -63,6 +65,18 @@
     - Navegación por terminal, conocimientos de hardware, gestión de carpetas.
   - Diseño (Photoshop, Illustrator, Figma)
     - Wireframes, prototipos de baja y alta fidelidad, design thinking, user testing, atomic design.
+  
+</div>
+<div class='experience'>
+
+  ### Tecnologías y lenguajes
+  - JavaScript
+  - Php
+  - React, React native
+  - HTML, CSS
+  - Git
+  - Virtual box
+
   
 </div>
 <div class='experience'>

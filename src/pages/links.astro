@@ -1,0 +1,106 @@
+---
+  import MiLayout from "../components/Layout.astro"
+  import style from "../styles/Links.module.css"
+  import { menuOptions } from "../data/linksMenuData"
+  import { linksPost } from "../data/linksDataPost"
+  import { linksStream } from "../data/linksDataStream"
+  import {
+    ArrowUp,
+    LogoLinkedin,
+    LogoInstagram,
+    LogoTwitterX,
+    ArrowHorizontal
+    } from "../components/Icons"
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Segura</title>
+</head>
+<body>
+  <main>
+
+    <div class={style.main}>
+      <section class={style.containerSliderMain}>
+        <section class={style.sectionMain}>
+          <div>
+            <h1>Carlos Segura</h1>
+            <h5>Diseñador y desarrollador web</h5>
+            <div class={style.containerSocial}>
+              <a href="https://www.linkedin.com/in/casvaru/">
+                <LogoLinkedin/>
+              </a>
+              <a href="https://www.instagram.com/casvaru/">
+                <LogoInstagram/>
+              </a>
+              <a href="https://twitter.com/Casvaru">
+                <LogoTwitterX/>
+              </a>
+            </div>
+          </div>
+          <div class={style.containerLinks}>
+            <h4>Próximos Streams:</h4>
+            {
+                linksStream.map((data)=>(
+                <div class={style.containerData}>
+                  <div class={style.containerDay}>
+                    <h5>{data.day}</h5>
+                    <h6>{data.mouth}</h6>
+                  </div>
+                  <a class={style.links} href={data.url}>{data.titleName}</a>
+                </div>
+              ))
+            }
+          </div>
+          <div class={style.containerArrowMenu}>
+            <div>
+              <ArrowUp/>
+              <span>Menú</span>
+            </div>
+          </div>
+          <div class={style.containerArrowSwipe}>
+            <div>
+              <ArrowHorizontal/>
+              <span>Swipe</span>
+            </div>
+          </div>
+        </section>
+    
+        <section class={style.sectionMain}>
+          <div class={style.containerLinks}>
+            <h4>Links</h4>
+            {
+              linksPost.map((data)=>(
+                <a class={style.links} href={data.url}>{data.titleName}</a>
+              ))
+            }
+          </div>
+          <div class={style.containerArrowMenu}>
+            <div>
+              <ArrowUp/>
+              <span>Menú</span>
+            </div>
+          </div>
+          <div class={style.containerArrowSwipe}>
+            <div>
+              <ArrowHorizontal/>
+              <span>Swipe</span>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class={style.sectionNav}>
+        <nav>
+          <ul>
+            {menuOptions.map((data)=>(
+              <a href={data.url}><li>{data.name}</li></a>
+            ))}
+          </ul>
+        </nav>
+      </section>
+    </div>  
+  </main>
+</body>
+</html>

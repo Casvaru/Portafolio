@@ -320,7 +320,9 @@
   object-fit: cover;
 }
 .capsuleProject video{
-  height: 100%;
+  height: 100% !important;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .capsuleProject .infoProject{
   display: none;
