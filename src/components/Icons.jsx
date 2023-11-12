@@ -5,6 +5,13 @@ export function Logo () {
     </div>
   )
 }
+export function ArrowVertical () {
+  return (
+    <div className="logoIcon">
+      <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 4V20M12 4L15.5 7.5M12 4L8.5 7.5M12 20L8.5 16.5M12 20L15.5 16.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
+    </div>
+  )
+}
 export function ArrowUp () {
   return (
     <div className="logoIcon">
