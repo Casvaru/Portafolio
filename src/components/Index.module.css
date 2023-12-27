@@ -422,7 +422,7 @@
     bottom: 0; left: 0;
     background: #000000d8;
     color: white;
-    margin-bottom: -800px;
+    margin-bottom: -1000px;
     display: block;
     transition: .2s ease-in-out;
   }
@@ -435,6 +435,9 @@
   }
   .containerCapsuleProject .containerLinks{
     padding: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .containerCapsuleProject .capsuleProject a img{
     height: 500px; width: 100%;

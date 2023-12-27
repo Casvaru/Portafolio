@@ -19,18 +19,9 @@ import {
 export default function AboutMe () {
   return (
     <>
-    <section className={style.containerMain}>
-      <div className={style.containerCard}>
-        <h3>Creador de contenido</h3>
-        <h3>+310 seguidores</h3>
-          <a target='_blank' rel='noreferrer' href="https://www.tiktok.com/@casvaru">
-        <LogoTiktok/>
-          </a>
-      </div>
-    </section>
   <section id='sobremi' className={style.containerAbout}>
     <div className={style.containerCardAbout}>
-  <p>Diseñador y programador en <b className={style.javascript}>JavaScript</b> con <b>1 año</b> de experiencia enfocado en la creación de soluciones digitales enfocadas al <b>UI/UX</b>.</p>
+  <p>Diseñador y programador en <b className={style.javascript}>JavaScript</b> con <b>1 año</b> de experiencia enfocado en la creación de soluciones digitales enfocadas en <b>UI/UX</b>.</p>
     <div className={style.containerRoadMap}>
       <LogoJavaScript/>
       <LogoAstro/>
