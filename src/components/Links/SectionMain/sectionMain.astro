@@ -1,0 +1,41 @@
+---
+  import style from '../../../styles/Links.module.css'
+  import {
+    LogoLinkedin,
+    LogoInstagram,
+    LogoTwitterX,
+    } from "../../../components/Icons"
+  import { linksPost } from "../../../data/linksDataPost"
+  import { linksStream } from "../../../data/linksDataStream"
+---
+<section class={style.sectionMain}>
+  <div>
+    <h1>Carlos Segura</h1>
+    <h5>Diseñador y desarrollador web</h5>
+    <div class={style.containerSocial}>
+      <a href="https://www.linkedin.com/in/casvaru/">
+        <LogoLinkedin/>
+      </a>
+      <a href="https://www.instagram.com/casvaru/">
+        <LogoInstagram/>
+      </a>
+      <a href="https://twitter.com/Casvaru">
+        <LogoTwitterX/>
+      </a>
+    </div>
+  </div>
+  <div class={style.containerLinks}>
+    <h4>Próximos Streams:</h4>
+    {
+        linksStream.map((data)=>(
+        <div class={style.containerData}>
+          <div class={style.containerDay}>
+            <h5>{data.day}</h5>
+            <h6>{data.mouth}</h6>
+          </div>
+          <a class={style.links} href={data.url}>{data.titleName}</a>
+        </div>
+      ))
+    }
+  </div>
+</section>

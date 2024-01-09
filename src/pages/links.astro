@@ -1,0 +1,39 @@
+---
+  import style from "../styles/Links.module.css"
+  import { menuOptions } from "../data/linksMenuData"
+  import { linksPost } from "../data/linksDataPost"
+  import SectionMain from '../components/Links/SectionMain/sectionMain.astro'
+  import SectionLinks from '../components/Links/SectionMain/sectionLinks.astro'
+  import  SupportGestures from '../components/Links/SectionMain/supportGestures.astro'
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Segura</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+  <script src="../Logic/mouseGrab.js"></script>
+</head>
+<body>
+  <main>
+
+    <div class={style.main}>
+      <section id="main" class={style.containerSliderMain}>
+        <SectionMain/>
+        <SectionLinks/>
+        <SupportGestures/>        
+      </section>
+      <section class={style.sectionNav}>
+        <nav>
+          <ul>
+            {menuOptions.map((data)=>(
+              <a href={data.url}><li>{data.name}</li></a>
+            ))}
+          </ul>
+        </nav>
+      </section>
+    </div>  
+  </main>
+</body>
+</html>

@@ -1,5 +1,5 @@
 import style from './Header.module.css'
-import { Logo, HamburgerMenu, HamburgerMenuClose, LogoLink } from '../Icons'
+import { Logo, HamburgerMenu, HamburgerMenuClose } from '../Icons'
 import { useState } from 'react'
 
 export default function Header () {

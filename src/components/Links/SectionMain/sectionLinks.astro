@@ -1,0 +1,14 @@
+---
+  import style from '../../../styles/Links.module.css'
+  import { linksPost } from "../../../data/linksDataPost"
+---
+<section class={style.sectionMain}>
+  <div class={style.containerLinks}>
+    <h4>Links</h4>
+    {
+      linksPost.map((data)=>(
+        <a class={style.links} href={data.url}>{data.titleName}</a>
+      ))
+    }
+  </div>
+</section>

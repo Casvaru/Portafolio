@@ -234,6 +234,24 @@
   width: 20px; height: 20px;
   transition: .2s ease-in-out;
 }
+.containerMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+.containerCard{
+  display: flex;
+  background: red;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 300;
+  text-align: center;
+  padding: 20px !important;
+  gap: 10px;
+}
 .containerAbout{
   height: 500px; max-width: 75ch;
   width: 100%;
@@ -245,6 +263,36 @@
   padding: 20px 0px;
   flex-direction: column;
   text-align: center;
+}
+.containerCardAbout{
+  margin: 50px 0px;
+}
+.containerNextLearning{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerNextLearning div{
+  margin: 5px 0px;
+}
+.containerCard{
+  width: 90%; max-width: 550px; height: auto;
+  border: 1px solid #ffffff2f;
+  background: #161616;
+  transition: .2s ease-out;
+  border-radius: 15px;
+  padding: 20px 0px;
+  transform: scale(.85);
+}
+.containerCard:hover{
+  border: 1px solid #797979;
+  transition: .2s ease-in;
+}
+.cotainerCardNextLearing h3{
+  padding: 3px 0px;
+  font-size: 18px;
+  color: #cacaca;
 }
 .containerSectionGeneral{
   width: 100%;
@@ -265,6 +313,7 @@
   width: 300px; height: 300px;
   border-radius: 15px;
   overflow: hidden;
+  opacity: .6;
 }
 .containerVideo{
   display: flex;
@@ -275,7 +324,9 @@
   object-fit: cover;
 }
 .capsuleProject video{
-  height: 100%;
+  height: 100% !important;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .capsuleProject .infoProject{
   display: none;
@@ -290,11 +341,10 @@
 }
 .containerRoadMap , .containerTechnology{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 3px;
-}
-.containerRoadMap div{
-  cursor: crosshair;
+  gap: 10px;
+  padding: 10px 0px;
 }
 .btnPrimary{
   padding: 10px 40px;
@@ -376,7 +426,7 @@
     bottom: 0; left: 0;
     background: #000000d8;
     color: white;
-    margin-bottom: -800px;
+    margin-bottom: -1000px;
     display: block;
     transition: .2s ease-in-out;
   }
@@ -389,6 +439,9 @@
   }
   .containerCapsuleProject .containerLinks{
     padding: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .containerCapsuleProject .capsuleProject a img{
     height: 500px; width: 100%;
@@ -402,6 +455,10 @@
     max-width: 800px !important;
     transition: .5s ease-in-out;
     border-radius: 40px;
-    filter: grayscale(0) contrast(1.2);
+    filter: grayscale(0) contrast(1);
+    opacity: 1;
+  }
+  .cotainerCardNextLearing h3{
+    font-size: 23px;
   }
 }

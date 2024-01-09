@@ -22,7 +22,7 @@
 
   ### Experiencia
 
-  - JER S.A (Asesor comercial) 2020 - Actualidad
+  - JER S.A | 2020 - Actualidad
   - Garagoa - Boyacá
     - Lidero una web que gestiona y centraliza los datos e  información de las loterías con sus resultados y secos. Optimizando tiempos de búsqueda.
     - Impulsé la creación de un chatbot de whatsapp para el mejoramiento de la comunicación y respuestas al cliente con sus diferentes dudas e inquietudes.
@@ -45,15 +45,21 @@
 <section class='experience'>
 
   ### Educación
+  - Sena 2023
+    - Desarrollo web con Php | <a target="_blank" href="./senaDesarrolloWebConPhp.pdf">Certificado</a>
   - One Oracle Next Education 2023
+<<<<<<< HEAD
     - Principiante en Programación G5 - ONE | [Certificado](https://app.aluracursos.com/degree/certificate/77010deb-64c6-44b4-ae3c-d339cad763d6)
   - Sena 2023
     - Desarrollo web con Php | [Certificado](./desarrollo-web-sena.pdf)
+=======
+    - Principiante en Programación G5 - ONE | <a target="_blank" href="https://app.aluracursos.com/degree/certificate/77010deb-64c6-44b4-ae3c-d339cad763d6">Certificado</a>
+>>>>>>> fc6f710d5fc93e75ca5e9af6d3ddf1ec152982fe
   - Platzi 2023
-    - Figma Avanzado | [Certificado](https://platzi.com/p/casvaru/curso/2582-figma-avanzado/diploma/detalle/)
-    - Básico Javascript  | [Certificado](https://platzi.com/p/casvaru/curso/1814-basico-javascript/diploma/detalle/)
+    - Figma Avanzado | <a target="_blank" href="https://platzi.com/p/casvaru/curso/2582-figma-avanzado/diploma/detalle/">Certificado</a>
+    - Básico Javascript  | <a target="_blank" href="https://platzi.com/p/casvaru/curso/1814-basico-javascript/diploma/detalle/">Certificado</a>
   - Unigermana 2019-2022
-    - Tecnólogo en Diseño gráfico multimedial | [Certificado](https://drive.google.com/file/d/1WY59U-VCAIUO3_cLtGNmu444gJU3OQSz/view?usp=sharing)
+    - Tecnólogo en Diseño gráfico multimedial | <a target="_blank" href="./unigermanaDisenoGrafico.jpg">Certificado</a>
   
 </section>
 <section class='experience'>
@@ -70,6 +76,18 @@
   
 </section>
 <section class='experience'>
+
+  ### Tecnologías y lenguajes
+  - JavaScript
+  - Php
+  - React, React native
+  - HTML, CSS
+  - Git
+  - Virtual box
+
+  
+</div>
+<div class='experience'>
 
   ### Habilidades blandas
   - Empatia

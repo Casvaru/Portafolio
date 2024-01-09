@@ -1,3 +1,6 @@
+*{
+  list-style: none !important;
+}
 .containerGrid{
   width: 100%;
   position: relative;
@@ -20,6 +23,7 @@
 .containerProject figure img{
   object-fit: cover;
   height: 100%;
+  width: 100%;
 }
 .containerProject:hover{
   filter: grayscale(0);

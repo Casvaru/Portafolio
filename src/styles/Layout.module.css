@@ -14,6 +14,12 @@ body{
   max-width: 1366px;
   margin: auto;
 }
+.logoIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes fade-in {
   from { opacity: 0; }
 }
