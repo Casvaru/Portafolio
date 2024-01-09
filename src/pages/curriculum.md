@@ -1,7 +1,7 @@
 ---
   layout: ../components/Layout.astro
 ---
-<section class="container">
+<main class="container">
 <header>
 
 # Carlos Andrés Segura Cárdenas
@@ -18,7 +18,7 @@
 
   Con 1 año de experiencia en  servicios digitales, diseñando, prototipando y construyendo aplicaciones móvil y servicios web que ayuden a facilitar procesos para los usuarios o clientes centrándose en una mejor experiencia y una rápida ejecución.
 
-<div class='experience'>
+<section class='experience'>
 
   ### Experiencia
 
@@ -31,28 +31,32 @@
   - Remoto en Bogotá
     - Optimicé la gestión de archivos, facilitando el orden y preservación de datos, archivos de uso recurrente optimizando tiempos y recursos.
     - Desarrollé varias propuestas de vídeo y publicidad con un nuevo enfoque más moderno y minimalista que resalta sus valores e identidad como empresa llegando a nuevos clientes.
-</div>
-<div class='experience'>
+</section>
+<section class='experience'>
 
   ### Proyectos
+  - Captcha-Open | [Npm](https://www.npmjs.com/package/captcha-open) | [GitHub](https://github.com/Casvaru/captcha-open/tree/main)
+    - Herramienta open source de tipo captcha con el qué aprendí a documentar mi código usando jsdoc, aprendí a usar las funciones asyncronas para poder esperar una respuesta por parte del usuario, también me adentré en buscar soluciones o de donde partir ya que no tenía mucha idea de como empezar.
   - MoneyBeam | [Website](https://contadordinero.vercel.app) | [APK](https://drive.google.com/file/d/1OzJxMQslM4L7xtwMmD5-HVyByMsN6-Gn/view?usp=share_link)
     - Herramienta móvil y web que ayuda al conteo del dinero en caja y a ordenar la cantidad de dinero solo indicando el número de billetes que hay por denominación. 
   - Secos en línea.com | [Website](https://secosenlinea.com)
     - Servicio web donde puedes encontrar los resultados y premios secos de la lotería de Colombia del último año en una sola web ayudando a centralizar la información.
-</div>
-<div class='experience'>
+</section>
+<section class='experience'>
 
   ### Educación
   - One Oracle Next Education 2023
     - Principiante en Programación G5 - ONE | [Certificado](https://app.aluracursos.com/degree/certificate/77010deb-64c6-44b4-ae3c-d339cad763d6)
+  - Sena 2023
+    - Desarrollo web con Php | [Certificado](./desarrollo-web-sena.pdf)
   - Platzi 2023
     - Figma Avanzado | [Certificado](https://platzi.com/p/casvaru/curso/2582-figma-avanzado/diploma/detalle/)
     - Básico Javascript  | [Certificado](https://platzi.com/p/casvaru/curso/1814-basico-javascript/diploma/detalle/)
   - Unigermana 2019-2022
     - Tecnólogo en Diseño gráfico multimedial | [Certificado](https://drive.google.com/file/d/1WY59U-VCAIUO3_cLtGNmu444gJU3OQSz/view?usp=sharing)
   
-</div>
-<div class='experience'>
+</section>
+<section class='experience'>
 
   ### Habilidades duras
   - Modelado 3D (Blender, Spline)
@@ -64,8 +68,8 @@
   - Diseño (Photoshop, Illustrator, Figma)
     - Wireframes, prototipos de baja y alta fidelidad, design thinking, user testing, atomic design.
   
-</div>
-<div class='experience'>
+</section>
+<section class='experience'>
 
   ### Habilidades blandas
   - Empatia
@@ -75,16 +79,16 @@
   - Adaptabilidad
 
   
-</div>
-<div class='experience'>
+</section>
+<section class='experience'>
 
   ### Idiomas
   - Español
   - Inglés
 
   
-</div>
 </section>
+</main>
 <style>
   .container{
     padding-top: 90px;
@@ -121,8 +125,9 @@
   }
   h3{
     text-align:left;
-    padding:20px 0px;
-    color: #FFE500;
+    margin:20px 0px;
+    border-left: 5px solid #0075FF;
+    padding:0px 0px 0px 5px;
   }
   .experience ul{
     font-size:.8rem;
