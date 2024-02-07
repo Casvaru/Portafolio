@@ -47,6 +47,7 @@
   ### Educación
   - Sena 2023
     - Desarrollo web con Php | <a target="_blank" href="./senaDesarrolloWebConPhp.pdf">Certificado</a>
+    - Apropiación de los conceptos en ciberseguridad | <a target="_blank" href="./senaCiberseguridad.pdf">Certificado</a>
   - One Oracle Next Education 2023
     - Principiante en Programación G5 - ONE | [Certificado](https://app.aluracursos.com/degree/certificate/77010deb-64c6-44b4-ae3c-d339cad763d6)
   - Sena 2023
