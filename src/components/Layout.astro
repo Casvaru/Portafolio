@@ -3,6 +3,7 @@ import style from "../styles/Layout.module.css"
 import Header from "./Header/Header"
 import Footer from "./Footer"
 
+
 interface Props{
   menuIsShow: boolean;
   footerIsShow: boolean;
@@ -40,6 +41,11 @@ const { menuIsShow = true, footerIsShow = true } = Astro.props;
     <meta name="twitter:title" content="Carlos Segura">
     <meta name="twitter:description" content="Desarrollador y diseñador web Colombiano, anímate a ver mi trabajo.">
     <meta name="twitter:image" content="./public/twitterCard.png">
+    <script>
+      import Uxcursor from 'ux-cursor'
+      Uxcursor({})
+    </script>
+    <!-- <script src="../Logic/cursor.js"></script> -->
   </head>
   <body id="body" class={style.container}>
     {menuIsShow ? <Header client:load /> : null }
@@ -47,6 +53,5 @@ const { menuIsShow = true, footerIsShow = true } = Astro.props;
       <slot />
     </main>
     {footerIsShow ? <Footer /> : null }
-    <div class="circle"></div>
   </body>
 </html>
