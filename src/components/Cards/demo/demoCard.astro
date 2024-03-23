@@ -1,0 +1,52 @@
+---
+import style from "./demoCard.module.css"
+
+interface Props {
+  url: string,
+  video: string,
+  title: string,
+  tags: string[],
+  alt: string
+}
+
+const {url = "", video = "", title = "Default title", tags = [], alt=""} = Astro.props as Props;
+---
+
+<div class={style.containerProject}>
+  <a href={url} target="_blank">
+    <video
+      class="videoPlay"
+      muted
+      loop
+    >
+      <source src={video} type="video/mp4">
+      <source src={video} type="video/webm">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
+  </a>
+  <div class={style.containerInfo}>
+    <h5>{title}</h5>
+    <ul>
+      {tags.map((tag) => (
+        <li>{tag}</li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<script>
+  const $videoContainers = document.querySelectorAll('.videoPlay');
+
+  $videoContainers.forEach($videoContainer => {
+    $videoContainer.addEventListener('mouseover', handlerHoverOverVideo);
+    $videoContainer.addEventListener('mouseleave', handlerHoverLeaveVideo);
+  });
+
+  function handlerHoverOverVideo(event) {
+    event.target.play();
+  }
+
+  function handlerHoverLeaveVideo(event) {
+    event.target.pause();
+  }
+</script>

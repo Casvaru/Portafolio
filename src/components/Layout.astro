@@ -5,8 +5,8 @@ import Footer from "./Footer"
 
 
 interface Props{
-  menuIsShow: boolean;
-  footerIsShow: boolean;
+  menuIsShow?: boolean;
+  footerIsShow?: boolean;
 }
 const { menuIsShow = true, footerIsShow = true } = Astro.props;
 ---
@@ -45,7 +45,6 @@ const { menuIsShow = true, footerIsShow = true } = Astro.props;
       import Uxcursor from 'ux-cursor'
       Uxcursor({})
     </script>
-    <!-- <script src="../Logic/cursor.js"></script> -->
   </head>
   <body id="body" class={style.container}>
     {menuIsShow ? <Header client:load /> : null }

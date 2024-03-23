@@ -1,37 +1,24 @@
 ---
 import Layout from "../components/Layout.astro";
 import style from '../styles/Archivos.module.css'
+import DemoCard from "../components/Cards/demo/demoCard.astro"
+
+// Define tus datos aquí
+const data = [
+  {
+    title: "ThreeJS model",
+    url: "https://demo-three-js-two.vercel.app/",
+    video: "./threejs.webm",
+    tags: ["threejs", "vite"],
+    alt: "demo view transition API New feature Chrome 115"
+  }
+]
 ---
+
 <Layout>
   <section class={style.containerGrid}>
-    <div class={style.containerProject}>
-      <figure>
-        <a href="https://demo-view-transition-api.vercel.app/" target="_blank">
-          <img src="./demo-view-transition.png" alt="demo view transition API New feature Chrome 115">
-        </a>
-        <div>
-          <h5>View transition API</h5>
-          <ul>
-            <li>2023</li>
-            <li>New API feature</li>
-            <li>Chrome 115</li>
-          </ul>
-        </div>
-      </figure>
-    </div>
-    <div class={style.containerProject}>
-      <figure>
-        <a href="https://demo-three-js-two.vercel.app/" target="_blank">
-          <img src="./threeJS.png" alt="demo view transition API New feature Chrome 115">
-        </a>
-        <div>
-          <h5>ThreeJS model</h5>
-          <ul>
-            <li>2023</li>
-            <li>ThreeJS</li>
-          </ul>
-        </div>
-      </figure>
-    </div>
+    {data.map(item => (
+      <DemoCard {...item} />
+    ))}
   </section>
 </Layout>
