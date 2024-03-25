@@ -10,6 +10,7 @@
   padding: 0px 30px;
   backdrop-filter: blur(10px);
   z-index: 10;
+  view-timeline-name: header;
 }
 nav li{
   list-style: none !important;

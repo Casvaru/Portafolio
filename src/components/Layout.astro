@@ -48,7 +48,7 @@ const { menuIsShow = true, footerIsShow = true } = Astro.props;
   </head>
   <body id="body" class={style.container}>
     {menuIsShow ? <Header client:load /> : null }
-    <main id="content">
+    <main class={style.mainContent} id="content">
       <slot />
     </main>
     {footerIsShow ? <Footer /> : null }

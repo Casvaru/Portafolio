@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  animation: skeletonLoading 2s infinite linear ;
 }
 .containerProject:hover{
   filter: grayscale(0);
@@ -19,7 +20,6 @@
   position: absolute;
   bottom: 0; left: 0;
   background: rgba(255, 255, 255, 0.9);
-  mix-blend-mode: exclusion;
   color: rgba(0, 0, 0, 1);
   transition: .3s ease-in-out;
 }
@@ -41,4 +41,15 @@
   padding: 3px 10px;
   border-radius: 15px;
   border: 1px solid #000;
+}
+@keyframes skeletonLoading{
+  0%{
+    background: gray;
+  }
+  50%{
+    background: rgb(82, 82, 82);
+  }
+  100%{
+    background: gray;
+  }
 }

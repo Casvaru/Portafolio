@@ -15,7 +15,8 @@ const {url = "", video = "", title = "Default title", tags = [], alt=""} = Astro
 <div class={style.containerProject}>
   <a href={url} target="_blank">
     <video
-      class="videoPlay"
+    id="videoPlay"
+      class={style.videoPlay}
       muted
       loop
     >
@@ -35,7 +36,7 @@ const {url = "", video = "", title = "Default title", tags = [], alt=""} = Astro
 </div>
 
 <script>
-  const $videoContainers = document.querySelectorAll('.videoPlay');
+  const $videoContainers = document.querySelectorAll('#videoPlay');
 
   $videoContainers.forEach($videoContainer => {
     $videoContainer.addEventListener('mouseover', handlerHoverOverVideo);
