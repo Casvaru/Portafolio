@@ -7,24 +7,22 @@
   flex-direction: column;
   gap: 10px;
   animation: gradientBackground 1s infinite linear;
-  background: -webkit-linear-gradient(top, transparent 30px, #e9ebed27 31px), 
-              -webkit-linear-gradient(left, transparent 30px, #e9ebed27 31px);
+  background: -webkit-linear-gradient(top, transparent 30px, var(--bgGray) 31px), 
+              -webkit-linear-gradient(left, transparent 30px, var(--bgGray) 31px);
   background-size: 31px 31px;
   box-shadow: inset 0px 0px 150px 50px black;
   background-color: #ffffff09;
 }
-.sectionCurriculum{
-  background-color: red;
-}
 .title{
-  font-size: 16px;
   font-weight: 400;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .name{
   font-size: 30px;
   font-weight: bold;
-  background-image: linear-gradient(135deg, #FFE500, #AD00FF, #0075FF);
+  background-image: linear-gradient(135deg, var(--yellow), var(--purple), var(--blue));
   animation: gradient-animation 4s infinite linear;
   background-clip: text;
   -webkit-background-clip: text;
@@ -41,17 +39,22 @@
   animation: animationNameLoadingPage 1.5s .3s cubic-bezier(0, 1.05, 1, 1) both;
 }
 .titleDesigner{
+  font-size: 22px;
   position: relative;
   width: 0ch;
   display: inline-block;
   overflow: hidden;
   animation: intervalHiddenTitleDesigner 6s 3s infinite steps(9);
-  color: #FFE500;
+  color: var(--yellow);
+  font-family: monospace;
 }
 .titleDeveloper{
+  font-size: 22px;
   animation: intervalHiddenTitleDeveloper 6s steps(13) infinite;
   display: inline-block;
   overflow: hidden;
+  color: var(--blue);
+  font-family: monospace;
 }
 .titleFrontend{
   position: relative;
@@ -81,10 +84,10 @@
     width: 0ch;
   }
   15%{
-    width: 11ch;
+    width: 13ch;
   }
   30%{
-    width: 11ch;
+    width: 13ch;
   }
   50%{
     width: 0ch;
@@ -98,10 +101,10 @@
     width: 0ch;
   }
   15%{
-    width: 8.3ch;
+    width: 9ch;
   }
   30%{
-    width: 8.3ch;
+    width: 9ch;
   }
   50%{
     width: 0ch;
@@ -132,7 +135,7 @@
 }
 @keyframes gradient-animation{
   0% {
-    background-image: linear-gradient(135deg, #FFE500, #AD00FF, #0075FF);
+    background-image: linear-gradient(135deg, var(--yellow), var(--purple), var(--blue));
   }
   5% {
     background-image: linear-gradient(135deg, #FFDC3A, #9C0CFF, #1A80E6);
@@ -207,7 +210,6 @@
   align-items: center;
   gap: 20px;
   height: 60px;
-  /* background: red; */
 }
 .containerSocial svg{
   height: 22px !important;
@@ -219,7 +221,7 @@
   transition: .1s ease-in-out;
 }
 .javascript{
-  color: #FFCA28;
+  color: var(--colorJavaScript);
 }
 .containerBtn{
   display: flex;
@@ -244,7 +246,6 @@
 }
 .containerCard{
   display: flex;
-  background: red;
   justify-content: center;
   flex-direction: column;
   flex-basis: 300;
@@ -278,7 +279,7 @@
 }
 .containerCard{
   width: 90%; max-width: 550px; height: auto;
-  border: 1px solid #ffffff2f;
+  border: 1px solid var(--borderButton);
   background: #161616;
   transition: .2s ease-out;
   border-radius: 15px;
@@ -286,7 +287,7 @@
   transform: scale(.85);
 }
 .containerCard:hover{
-  border: 1px solid #797979;
+  border: 1px solid var(--borderButton-hover);
   transition: .2s ease-in;
 }
 .cotainerCardNextLearing h3{
@@ -359,10 +360,10 @@
   font-size: 28px;
 }
 .Bracket{
-  color: #F37A53;
+  color: var(--orange);
 }
 .containerTimeLine{
-  border-left: 1px solid rgba(255, 255, 255, 0.466);
+  border-left: 1px solid var(--gray);
   height: auto; width: 80%;
   position: relative;
 }
@@ -372,7 +373,7 @@
 .sectionExperience::before{
   content: "";
   width: 15px; height: 15px;
-  background: white;
+  background: var(--white);
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -385,6 +386,11 @@
 }
 .containerFooter{
   height: 300px; width: 100%;
+}
+.containerCardBlog{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 @media(min-width:1024px){
   .title{
@@ -412,7 +418,7 @@
   .containerCapsuleProject .capsuleProject{
     max-width: 120px; height: 500px;
     flex-grow: 1;
-    background: #fff;
+    background: var(--white);
     border-radius: 99px;
     transition: .5s ease-in-out;
     position: relative;
@@ -424,8 +430,8 @@
     padding: 20px;
     position: absolute;
     bottom: 0; left: 0;
-    background: #000000d8;
-    color: white;
+    background: var(--black);
+    color: var(--white);
     margin-bottom: -1000px;
     display: block;
     transition: .2s ease-in-out;

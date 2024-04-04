@@ -1,0 +1,18 @@
+.containerArticle{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  gap: 3px;
+}
+.containerArticle a{
+  font-size: 1.2rem;
+  color: var(--orange);
+}
+.containerArticle time{
+  color: var(--gray);
+}
+.containerArticle span{
+  font-style: italic;
+  text-align: center;
+}

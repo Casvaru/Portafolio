@@ -4,9 +4,22 @@
  font-family: 'Poppins', sans-serif;
  list-style: none;
 }
+:root{
+  --orange:#F37A53;
+  --gray:#cacaca;
+  --white:#ffffff;
+  --bgGray:#e9ebed27;
+  --yellow:#FFE500;
+  --blue:#0075FF;
+  --purple:#AD00FF;
+  --colorJavaScript:#FFCA28;
+  --borderButton:#ffffff2f;
+  --borderButton-hover:#797979;
+  --black:#000000d8;
+}
 body{
   background: #030303;
-  color: white;
+  color: var(--white);
   position: relative;
 }
 .container{

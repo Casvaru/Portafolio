@@ -1,0 +1,17 @@
+---
+interface Props{
+  date : TimeHTMLAttributes,
+  url: String,
+  paragraph: String,
+  timeToRead: String,
+  title: String
+}
+const { date, url, paragraph, timeToRead, title} = Astro.props
+import style from './CardBlog.module.css'
+---
+<article class={style.containerArticle}>
+  <time datetime={date}>{date}</time>
+  <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
+  <p>{paragraph}</p>
+  <span>{timeToRead} minutos de lectura</span>
+</article>

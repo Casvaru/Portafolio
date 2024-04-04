@@ -1,0 +1,25 @@
+---
+import style from '../components/Index.module.css'
+import styleBtn from '../components/Buttons/Buttons.module.css'
+import CardBlog from './CardBlog/CardBlog.astro'
+---
+<section id="blog" class={style.containerSectionGeneral}>
+  <h2 class={style.sectionTitle}><span class={style.Bracket}>&#123;</span>Últimos artículos<span class={style.Bracket}>&#125;</span></h2>
+  <div class={style.containerCardBlog}>
+    <CardBlog
+      date="Mar 29, 2024"
+      title="Subtítulos en vídeos HTML"
+      url="https://blog.casvaru.com/blog/subtitulos-en-videos-html/"
+      paragraph="Mejora la accesibilidad de tu web agregando subtítulos a tus vídeos de manera sencilla."
+      timeToRead="8"
+    />
+    <CardBlog
+      date="Jan 6, 2024"
+      title="Scrollbar para tu web usando solo CSS"
+      url="https://blog.casvaru.com/blog/scrollbar-para-tu-web-usando-solo-css/"
+      paragraph="Crea un fácil y sencillo scrollbar usando solo HTML y CSS gracias a la propiedad de animation-timeline."
+      timeToRead="3"
+    />
+    <a class={styleBtn.btnCommonS} href="https://blog.casvaru.com/">Ver más artículos</a>
+  </div>
+</section>
