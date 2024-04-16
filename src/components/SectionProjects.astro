@@ -24,7 +24,16 @@ import { LogoHtml,
     <div class={style.capsuleProject}>
       <a href="https://secos-en-linea.vercel.app/">
         <picture>
-          <img src="./secosenlinea.avif" alt="secos en línea imagen de referencia">
+          <img
+          sizes=""
+            src="./secosenlinea/secosenlinea760.avif"
+            srcset="
+            ./secosenlinea/secosenlinea785.avif 785w,
+            ./secosenlinea/secosenlinea1253.avif 1253w,
+            ./secosenlinea/secosenlinea1366.avif 1366w
+            "
+            alt="secos en línea imagen de referencia"
+          >
         </picture>
       </a>
       <div class={style.infoProject}>
@@ -51,7 +60,13 @@ import { LogoHtml,
     <div class={style.capsuleProject}>
       <a href="https://contadordinero.vercel.app/">
         <picture>
-          <img src="./moneybeam.avif" alt="Render aplicación Moneybeam en iPhone">
+          <img
+          src="./moneybeam/moneybeam300.webp"
+          srcset="
+            ./moneybeam/moneybeam593.webp 593w,
+            ./moneybeam/moneybeam.webp 1080w,
+          "
+          alt="Render aplicación Moneybeam en iPhone">
         </picture>
       </a>
       <div class={style.infoProject}>
