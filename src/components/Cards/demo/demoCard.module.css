@@ -8,10 +8,13 @@
   justify-content: center;
   position: relative;
   animation: skeletonLoading 2s infinite linear ;
+  border: 0px solid transparent;
 }
 .containerProject:hover{
   filter: grayscale(0);
   transition: .3s ease;
+  transform: scale(1.1);
+  border: 3px solid var(--white);
 }
 .containerInfo{
   width: 100%;
