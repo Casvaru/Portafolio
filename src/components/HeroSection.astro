@@ -3,11 +3,13 @@ import style from '../components/Index.module.css'
 import styleBtn from '../components/Buttons/Buttons.module.css'
 import {
   LogoLinkedin,
-  DownloadSvg,
+  MailSVG,
   LogoGitHub,
   LogoInstagram,
   LogoBehance, 
-  LogoTwitch} from '../components/Icons'
+  LogoTwitch,
+  LogoThreads,
+LogoTwitterX} from '../components/Icons'
 ---
 <section class={style.containerSection}>
   <h2 class={style.title}><span class={style.titleDeveloper}>Desarrollador</span><span class={style.titleDesigner}>Diseñador</span> <span class={style.titleFrontend}>frontend</span></h2>
@@ -16,15 +18,17 @@ import {
       <h1 class={style.name}>Carlos Andrés Segura</h1>
     </div>
   </div>
-  <h2 class={style.slogan}>{'{Aprende, crea, diviértete e itera.}'}</h2>
+  <h2 class={style.slogan}>Diseño UI | Accesibilidad | Diseño UX </h2>
   <div class={style.containerSocial}>
     <a aria-label="Enlace de Twitch" target="_blank" href="https://www.twitch.tv/casvaru"><LogoTwitch/></a>
     <a aria-label="Enlace de linkedin" target="_blank" href="https://www.linkedin.com/in/casvaru/"><LogoLinkedin/></a>
     <a aria-label="Enlace de Github" target="_blank" href="https://github.com/Casvaru/"><LogoGitHub/></a>
     <a aria-label="Enlace de Instagram" target="_blank" href="https://www.instagram.com/casvaru/"><LogoInstagram/></a>
     <a aria-label="Enlace de Behance" target="_blank" href="https://www.behance.net/casvaru"><LogoBehance/></a>
+    <a aria-label="Enlace de Threads" target="_blank" href="https://www.threads.net/casvaru"><LogoThreads/></a>
+    <a aria-label="Enlace de Threads" target="_blank" href="https://twitter.com/Casvaru"><LogoTwitterX/></a>
   </div>
   <div class={style.containerBtn}>
-    <a download class={styleBtn.btnMain} href="./carlossegura-cv.pdf">Descargar HV<span class={style.logoLink}><DownloadSvg/></span></a>
+    <a download class={styleBtn.btnMain} href="mailto:carlosandres.segurac@gmail.com">Ponte en contacto<span class={style.logoLink}><MailSVG/></span></a>
   </div>
 </section>

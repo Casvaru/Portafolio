@@ -21,7 +21,7 @@ export default function Header () {
           <ul className={menuIsActive ? style.containerNavIsActive : style.containerNav}>
             <li><a className={style.containerLink} href="/">Inicio</a></li>
             <li><a className={style.containerLink} href="demos">Demos</a></li>
-            <li><a className={style.containerLink} href="curriculum">Curriculum</a></li>
+            {/* <li><a className={style.containerLink} href="curriculum">Curriculum</a></li> */}
             <li><a className={style.containerLink} target='_blank' rel='noreferrer' href="https://blog.casvaru.com">Blog</a></li>
           </ul>
         </nav>
