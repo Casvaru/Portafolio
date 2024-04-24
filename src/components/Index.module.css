@@ -127,7 +127,6 @@
 @keyframes gradientBackground{
   to{
     background-position: 0px 0px;
-    
   }
   from{
     background-position: 62px 62px;

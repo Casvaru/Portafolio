@@ -12,8 +12,7 @@ import {
   LogoAngular,
   LogoPhp,
   LogoNotion,
-  LogoTypescript,
-  LogoTiktok
+  LogoTypescript
 } from './Icons'
 
 export default function AboutMe () {
@@ -21,7 +20,7 @@ export default function AboutMe () {
     <>
   <section id='sobremi' className={style.containerAbout}>
     <div className={style.containerCardAbout}>
-  <p>Diseñador y programador en <b className={style.javascript}>JavaScript</b> con <b>1 año</b> de experiencia enfocado en la creación de soluciones digitales enfocadas en <b>UI/UX</b>.</p>
+  <p>Diseñador web profesional enfocado en Diseño UI y UX mejorando la accesibilidad, rendimiento y creado sistemas de diseños para tu producto y/o servicios.</p>
     <div className={style.containerRoadMap}>
       <LogoJavaScript/>
       <LogoAstro/>
@@ -46,13 +45,13 @@ export default function AboutMe () {
         <LogoTypescript/>
       </div>
       </div>
-      <footer>
+      {/* <footer>
         <a
         target='_blank'
         rel='noreferrer'
         href="https://www.notion.so/casvaru/Programming-roadmap-19f7e64e0b2545dd9262f266dd93dfc3?pvs=4"
         className={btnStyle.btnCommonS}>Mi roadmap Notion</a>
-      </footer>
+      </footer> */}
     </div>
   </div>
   </section>

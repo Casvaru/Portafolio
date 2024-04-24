@@ -7,8 +7,10 @@
 :root{
   --orange:#F37A53;
   --gray:#cacaca;
+  --graytr:rgba(202, 202, 202, 1);
   --white:#ffffff;
   --bgGray:#e9ebed27;
+  --bgBody:#030303;
   --yellow:#FFE500;
   --blue:#0075FF;
   --purple:#AD00FF;
@@ -18,7 +20,7 @@
   --black:#000000d8;
 }
 body{
-  background: #030303;
+  background: var(--bgBody);
   color: var(--white);
   position: relative;
 }
