@@ -24,7 +24,16 @@ body{
   color: var(--white);
   position: relative;
 }
-.container{
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--borderButton-hover);
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+  .container{
   width: 90%; height: 100vh;
   max-width: 1366px;
   margin: auto;

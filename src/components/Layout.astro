@@ -41,11 +41,13 @@ const { menuIsShow = true, footerIsShow = true } = Astro.props;
     <meta name="twitter:title" content="Carlos Segura">
     <meta name="twitter:description" content="Desarrollador y diseñador web Colombiano, anímate a ver mi trabajo.">
     <meta name="twitter:image" content="./public/twitterCard.png">
-    <script>
-      import Uxcursor from 'ux-cursor'
-      Uxcursor({})
-    </script>
   </head>
+  <script>
+    import UxCursor from 'ux-cursor'
+      UxCursor({
+        size: 40
+      })
+  </script>
   <body id="body" class={style.container}>
     {menuIsShow ? <Header client:load /> : null }
     <main class={style.mainContent} id="content">

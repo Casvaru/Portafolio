@@ -20,7 +20,8 @@ export default function AboutMe () {
     <>
   <section id='sobremi' className={style.containerAbout}>
     <div className={style.containerCardAbout}>
-  <p>Diseñador web profesional enfocado en Diseño UI y UX mejorando la accesibilidad, rendimiento y creado sistemas de diseños para tu producto y/o servicios.</p>
+  <p>
+    <span className={style.scrollReveal}>Diseñador web profesional enfocado en <strong>Diseño UI y UX</strong> mejorando la <em>accesibilidad, rendimiento y creado sistemas de diseños</em> para tu producto y/o servicios.</span></p>
     <div className={style.containerRoadMap}>
       <LogoJavaScript/>
       <LogoAstro/>

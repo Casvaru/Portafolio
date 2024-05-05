@@ -258,7 +258,7 @@
   margin: auto;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 20px 0px;
   flex-direction: column;
   text-align: center;
@@ -266,6 +266,21 @@
 .containerCardAbout{
   margin: 50px 0px;
 }
+.scrollReveal{
+  color: rgba(255, 255, 255, .05);
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(90deg,var(--white),var(--white));
+  animation: viewText linear forwards;
+  animation-timeline: view();
+  animation-range: contain;
+  animation-range-start: cover 20vh;
+  animation-range-end: cover 60vh;
+  font-size: 1.5rem;
+  text-wrap: pretty;
+}
+
 .containerNextLearning{
   width: 100%;
   display: flex;
@@ -299,6 +314,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: showContent linear both;
+  animation-timeline: view();
+  animation-range: 30vh 80vh;
+}
+@keyframes showContent{
+  from{
+    scale: .5;
+    opacity: 0;
+    transform: translateY(-300px);
+  }
 }
 .containerCapsuleProject{
   display: flex;
@@ -313,19 +338,20 @@
   border-radius: 15px;
   overflow: hidden;
   opacity: .6;
+  animation: showContent linear both;
+  animation-timeline: view();
+  animation-range: 30vh 50vh;
 }
 .containerVideo{
   display: flex;
   justify-content: center;
 }
 .capsuleProject img{
-  height: 100%; width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .capsuleProject video{
   height: 100% !important;
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 .capsuleProject .infoProject{
   display: none;
@@ -337,6 +363,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: showContent linear both;
+  animation-timeline: view();
+  animation-range: 30vh 80vh;
 }
 .containerRoadMap , .containerTechnology{
   display: flex;
@@ -367,6 +396,7 @@
 }
 .containerExperience{
   position: relative;
+
 }
 .sectionExperience::before{
   content: "";
@@ -389,6 +419,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  animation: showContent linear both;
+  animation-timeline: view();
+  animation-range: 30vh 50vh;
+}
+@keyframes viewText{
+  to{
+    background-size: 100% 100%;
+  }
 }
 @media(min-width:1024px){
   .title{
@@ -447,8 +485,8 @@
     flex-wrap: wrap;
     gap: 10px;
   }
-  .containerCapsuleProject .capsuleProject a img{
-    height: 500px; width: 100%;
+  .capsuleProject img{
+    height: 100%; 
     object-fit: cover;
   }
   .containerCapsuleProject div:hover .infoProject{
