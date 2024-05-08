@@ -1,5 +1,4 @@
 import style from './Index.module.css'
-import btnStyle from '../components/Buttons/Buttons.module.css'
 import {
   LogoJavaScript,
   LogoAstro,
@@ -9,10 +8,7 @@ import {
   LogoGit,
   LogoAdobe,
   LogoBlender,
-  LogoAngular,
-  LogoPhp,
-  LogoNotion,
-  LogoTypescript
+  LogoNotion
 } from './Icons'
 
 export default function AboutMe () {
@@ -21,31 +17,22 @@ export default function AboutMe () {
   <section id='sobremi' className={style.containerAbout}>
     <div className={style.containerCardAbout}>
   <p>
-    <span className={style.scrollReveal}>Diseñador web profesional enfocado en <strong>Diseño UI y UX</strong> mejorando la <em>accesibilidad, rendimiento y creado sistemas de diseños</em> para tu producto y/o servicios.</span></p>
-    <div className={style.containerRoadMap}>
-      <LogoJavaScript/>
-      <LogoAstro/>
-      <LogoReact/>
-      <LogoTailwind/>
-      <LogoGit/>
-      <LogoFigma/>
-      <LogoAdobe/>
-      <LogoBlender/>
-      <LogoNotion/>
-    </div>
-    </div>
+    <span className={style.scrollReveal}>Soy un diseñador web freelance de Colombia especializado en <strong>Diseño UI UX</strong> de sitios web y apps, apasionado en crear sistemas de diseños, experiencias visuales, seguir las pautas de accesibilidad <strong>WCAG</strong> y optimizar el rendimiento de tu web.</span></p>
   <div className={style.containerNextLearning}>
     <div className={style.containerCard}>
-      <header>
-        <h3>¿Qué estoy aprendiendo hoy?</h3>
-      </header>
-      <div>
+      <h3>Mis herramientas</h3>
       <div className={style.containerRoadMap}>
-        <LogoAngular/>
-        <LogoPhp/>
-        <LogoTypescript/>
+        <LogoJavaScript/>
+        <LogoAstro/>
+        <LogoReact/>
+        <LogoTailwind/>
+        <LogoGit/>
+        <LogoFigma/>
+        <LogoAdobe/>
+        <LogoBlender/>
+        <LogoNotion/>
       </div>
-      </div>
+    </div>
       {/* <footer>
         <a
         target='_blank'
