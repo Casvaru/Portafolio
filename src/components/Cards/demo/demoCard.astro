@@ -3,13 +3,14 @@ import style from "./demoCard.module.css"
 
 interface Props {
   url: string,
-  video: string,
+  videoMp4: string,
+  videoWebm: string,
   title: string,
   tags: string[],
   alt: string
 }
 
-const {url = "", video = "", title = "Default title", tags = [], alt=""} = Astro.props as Props;
+const {url = "", videoMp4 = "",videoWebm = "", title = "Default title", tags = [],} = Astro.props as Props;
 ---
 
 <div class={style.containerProject}>
@@ -19,10 +20,10 @@ const {url = "", video = "", title = "Default title", tags = [], alt=""} = Astro
       class={style.videoPlay}
       muted
       loop
+      src={videoWebm}
     >
-      <source src={video} type="video/mp4">
-      <source src={video} type="video/webm">
-      Tu navegador no soporta la reproducción de videos.
+      <source src={videoMp4} type="video/mp4">
+      Tu navegador no soporta la reproducción de videos MP4 y Webm, actualiza tu navegador.
     </video>
   </a>
   <div class={style.containerInfo}>
