@@ -36,6 +36,9 @@
   justify-content: center;
   gap: 5px;
 }
+.videoPlay{
+  width: 300px; height: 300px;
+}
 .containerInfo ul li{
   list-style: circle;
   font-size: .8rem;
