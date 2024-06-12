@@ -9,6 +9,7 @@
   position: relative;
   animation: skeletonLoading 2s infinite linear ;
   border: 0px solid transparent;
+  background-position: center;
 }
 .containerProject:hover{
   filter: grayscale(0);
@@ -29,9 +30,6 @@
 .containerProject:hover div{
   margin-bottom: -200px;
   transition: .3s ease-in-out;
-}
-.containerProject a img{
-  height: 300px;
 }
 .containerInfo ul{
   display: flex;
